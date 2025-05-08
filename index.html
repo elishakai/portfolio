@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Primary Meta Tags -->
+    <title>Portfolio</title>
+    <meta name="title" content="Portfolio" />
+    <meta name="description" content="A Portfolio That Tells My Story in Tech" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://elishakai.github.io/portfolio/" />
+    <meta property="og:title" content="Portfolio" />
+    <meta property="og:description" content="A Portfolio That Tells My Story in Tech" />
+    <!-- <meta property="og:image" content="./images/meta-tags.png" />  -->
+    <!-- DO TESTING ON ABOVE URL -->
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://elishakai.github.io/portfolio/" />
+    <meta property="twitter:title" content="Portfolio" />
+    <meta property="twitter:description" content="A Portfolio That Tells My Story in Tech" />
+    <meta property="twitter:image" content="./images/meta-tags.png" />
+    
+    <!-- Meta Tags Generated with https://metatags.io -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#abt">Home</a></li>
+                <li><a href="#sk">Skills</a></li>
+                <li><a href="#ed">Education</a></li>
+                <li><a href="#int">Interests</a></li>
+                <li><a href="#prjt">Projects</a></li>
+                <li><a href="#cnt">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about" id="abt">
+            <h1>About Me</h1>
+            <div>
+                <img src="./images/me.png" alt="A photo of Granton" id="myphoto">
+
+                <div style="display: flex; flex-direction: column;" class="intro">
+                    <h3 style="margin-top: 60px;">Introduction</h3>
+                    <p>My name is Elisha Kai. I'm currently a freelance full-stack developer. <br> 
+                        I'm passionate about building sustainable technologies, and eager to use my Python and machine learning skills to make a positive impact.
+                    </p>
+                    <h3>Description</h3>
+                    <p>I'm a diligent techie who loves to pay attention to detail and this enables me to deliver quality work. 
+                        Curiosity is one of my core identities and in the world of tech it has driven me to great depths so lets dive in. 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="sk">
+            <h1>Programming Languages</h1>
+            <!-- <p>I am profficient in</p> -->
+            <div> 
+                <img src="./images/icons8-python-144.png" alt="a python3 icon from icons8">
+                <img src="./images/icons8-flask-128.png" alt="a flask icon from icons8">
+                <img src="./images/icons8-database-80.png" width="128px" alt="a database icon from icons8">
+                <img src="./images/icons8-css3-144.png" alt="a css3 icon from icons8">
+                <img src="./images/icons8-html-5-144.png" alt="a html5 icon from icons8">
+            </div>
+            <a href="https://icons8.com/" id="copyrights">icons from icons8.com</a>
+        </section>
+        <section class="education" id="ed">
+            <h1>Education</h1>
+            <div>
+                <details>
+                    <summary>Kisii University</summary>
+                    <p>
+                        Degree Computer Science <br>
+                        Sep 2021 - Apr 2025 <br>
+                        I focused on what I could do practically, what I could make. Not the theory.
+                    </p>
+                </details>
+                <details>
+                    <summary>Mpeketoni Boys High School</summary>
+                    <p>
+                        KCSE Grade C+ <br>
+                        Jan 2017 - Apr 2020 <br>
+                        Lamu <br>
+                        Strongest subject: Maths, History & Computer
+                    </p>
+                </details>
+                <a href="./Updated-CV-Elisha-Kiboya.pdf" 
+                    style="color: skyblue; font-weight: bold; text-decoration: underline;">Download my CV
+                </a>
+            </div>
+        </section>
+        <section class="interests" id="int">
+            <h1>Interests</h1>
+            <p style="text-align: center; padding: 0 10%;">
+                I feel really interested in three things: <br>
+                - Cybersecurity because when AI replaces developers, 
+                I'll be the one hacking it, breaking it and creating work for developers and myself 👩🏻‍💻. <br>
+                - Cloud computing, the idea that I can create super powerful virtual computers that run in the cloud, fires me up 🔥. <br>
+                - Backend development because I love learning the logic of how things work 🤔.
+            </p>
+        </section>
+        <section class="projects" id="prjt">
+            <h1>Projects</h1>
+            <div class="project1">
+                <h2>Addiction Solver</h2>
+                <div class="projectlayout">
+                    <img src="./images/addiction-solver-1.png" alt="image of addiction solver" class="addiction">
+                    <p>
+                        Is a web application that helps people recover from their addictions. 
+                        Main features are: peer to peer forum, guidance from an AI Chatbot and educational resources.
+                        <span style="color: #FFB7C3;">Made with Python, Flask, HTML, CSS, Bootstrap, JS and Sqlite3.</span> <br>
+                        <span><a href="https://addiction-solver.onrender.com/" 
+                            style="color: skyblue; font-weight: bold; text-decoration: underline;">link</a>
+                        </span> 
+                    </p>
+                </div>
+            </div>
+            <div class="project2">
+                <h2>Chatbot</h2>
+                <div class="projectlayout">
+                    <img src="./images/chatbot.png" alt="image of a robot" class="robot">
+                    <p>
+                        It's an AI powered chatbot where a person with any addiction can get guidance on how to overcome it.
+                        <span style="color: #FFB7C3;">Made with Zapier.</span> <br>
+                        <span><a href="https://samboja651.github.io/Chat-Bot/" 
+                            style="color: skyblue; font-weight: bold; text-decoration: underline;">link</a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="cnt">
+        <hr>
+        <div>
+            <a href="https://github.com/elishakai" style="display: block;">
+                <img src="./images/icons8-github-100.png" width="96px" alt="a github icon from icons8">
+            </a>
+            <a href="https://www.linkedin.com/in/elisha-kai" style="display: block;">
+                <img src="./images/icons8-linkedin-96.png" width="100px" alt="a linkedin icon from icons8">
+            </a>
+            <p>email: elishabless02@gmail.com <br> phone: +254790724597</p>
+        </div>
+    </footer>
+</body>
+</html>

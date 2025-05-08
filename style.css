@@ -1,0 +1,168 @@
+html{
+    --text: white;
+    --body: #1E2D2F;
+    --effects: #FFB7C3;
+}
+body{
+    margin: 0 10%;
+    background-color: var(--body);
+} 
+/* navbar */
+nav ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+/* layout */
+nav ul{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+    
+}
+nav ul li{
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 70px;
+    text-align: center;
+    background-color: var(--body);
+    padding: 5px;
+}
+nav ul li a{
+    color: var(--text);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+nav ul li:hover{
+    background-color: var(--effects);
+    transition: 0.5s;
+}
+/* colors, text styles and fonts */
+p{
+    color: var(--text);
+    line-height: 1.4;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+}
+h1,h2,h3,summary{
+    color: var(--effects);
+    line-height: 1.4;
+}
+.intro{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    width: 500px;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+}
+/* content layout */
+.about>div, .projectlayout{
+    display: flex;
+    gap: 50px;
+} 
+#myphoto{
+    width: 35%;
+    height: auto;
+    border: 2px solid grey;
+    padding: 10px;
+    margin-left: 7%;
+    border-radius: 5px;
+}
+.projects img{
+    width: 50%;
+}
+section.skills>div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.project4>div h3{
+    border: 2px solid black;
+    padding: 5% 20%;
+    font-size: 400%;
+}
+.skills>div img{
+    width: 11%;
+}
+footer>div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px 0px;
+}
+/* for icons sourced from icons8 */
+#copyrights{
+    text-align: center; 
+    display: block;
+    margin-top: 3%;
+    margin-bottom: 0%;
+    padding: 0%;
+    color: skyblue;
+    font-size: x-small;
+}
+form *{
+    color-scheme: light;
+}
+/* mediaquery to remove navbar */
+@media (max-width: 870px){
+    header>nav{
+        display: none;
+    }
+}
+/* small screens */
+@media (max-width: 575px){
+    .projects img{
+        width: 100%;
+    }
+    #myphoto{
+        width: 100%;
+        padding: 0px;
+        margin-bottom: -20%;
+        margin-left: 0%;
+    }
+    .about>div, .projectlayout{
+        display: flex;
+        /* gap: 50px; */
+        flex-wrap: wrap;
+    } 
+    body{
+        margin: 3%;
+    }
+}
+/* media query for a flexible form */
+@media (max-width: 458px){
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    button{
+        width: fit-content;
+        align-self: center;
+    }
+}
+/* medium screens- tablets */
+@media (min-width:576px) and (max-width: 700px){
+    .projects img{
+        width: 50%;
+    }
+    #myphoto{
+        width: 50%;
+        margin-left: 0%;
+    }
+    body{
+        margin: 3%;
+    }
+    .about>div, .projectlayout{
+       padding: 0px;
+       margin: 0px;
+    } 
+}
